@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.15.6
+// @version 1.15.6.1
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -190,9 +190,8 @@ topBtnn.style.backgroundColor = "#2e51a2";
 }
 }
 if (window.location.href.indexOf('https://anilist.co/user/') == 0) {
-    var bg = $('.user-page-unscoped').css('--color-blue')
     $('#topBtn').css({
-        backgroundColor: $('.list .title').css('color'),
+      backgroundColor: 'rgb(' + $('.user-page-unscoped').css('--color-blue') + ')',
     });
 } else if (window.location.href.indexOf('https://anilist.co/') == 0) {
     $('#topBtn').css({
