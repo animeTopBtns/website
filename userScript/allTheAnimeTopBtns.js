@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.15.6.1
+// @version 1.15.7
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -354,7 +354,7 @@ button#topBtnWithMal2 img {
     <div id="gmSomeID">
         <style>
 #topBtn {
-  background-color: #31bff9;
+  background-color: #5a2e98;
   color: #ddd;
 }
 </style>
