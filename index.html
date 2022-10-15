@@ -12,6 +12,7 @@
     <meta property="og:description" content="All my anime top buttons mashed into 1 UserScript (has MAL-Sync support)">
     <meta property="og:url" content="https://animetopbtns.github.io/website/">
     <meta property="og:image" content="https://raw.githubusercontent.com/animeTopBtns/website/main/Circle-icons-arrow-up.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body style="
@@ -99,6 +100,132 @@
     <h1>Is there a website you want to be added?</h1>
     <p>If you want me to add a website to this userscript just email me at: <a href="mailto:AllTheAnimeTopBtns@gmail.com?subject=Request%20to%20add%20a%20website%20to%20userscript&body=Please%20give%20me%20the%20name%20of%20the%20website%20and%20the%20link."
             target="_blank">AllTheAnimeTopBtns@gmail.com</a><br><br>(Please give me the name of the website and the link.)</p>
+
+    <div id="topBtnBoxThing">
+        <button id="HideTopBtnButton" onclick="HidetopBtn();">
+                        <svg width="43px" height="43px" version="1.1" viewBox="0 0 240 213.33" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                 <metadata>
+                  <rdf:RDF>
+                   <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                    <dc:title/>
+                   </cc:Work>
+                  </rdf:RDF>
+                 </metadata>
+                 <g transform="translate(-177.85 -81.809)">
+                  <path class="hideTopBtnClr" d="m193.23 292.53c-1.5085-1.6669-2.0814-3.7186-1.5822-5.6667 1.1768-4.5922 202.25-205.05 205.68-205.05 3.9762 0 7.6738 4.556 6.7196 8.2796-1.1768 4.5923-202.25 205.05-205.68 205.05-1.525 0-3.8368-1.1758-5.1374-2.6129zm83.951-28.186c-9.5246-2.1382-24.667-8.098-24.667-9.7086 0-0.86346 3.8223-5.3582 8.4939-9.9883l8.4939-8.4184 4.2943 2.2206c2.3618 1.2214 8.4491 3.087 13.527 4.1458 37.802 7.8819 72.525-26.842 64.643-64.643-1.0588-5.0782-2.9286-11.174-4.1552-13.545l-2.23-4.3124 11.391-11.391c10.624-10.624 11.612-11.29 14.678-9.8929 9.0474 4.1222 46.197 44.061 46.197 49.666 0 6.97-34.412 42.338-53.645 55.135-23.65 15.736-43.698 22.268-67.688 22.055-7.7-0.0685-16.4-0.66336-19.333-1.3219zm-56.898-28.762c-16.021-12.861-42.436-42.183-42.436-47.106 0-6.1439 31.676-39.697 49.333-52.256 12.225-8.6954 26.889-16.324 39.333-20.462 13.018-4.3286 37.057-5.9343 50.183-3.352 10.933 2.1509 26.484 7.9816 26.484 9.93 0 0.85289-3.8222 5.339-8.4939 9.9691l-8.4939 8.4184-4.2942-2.2206c-2.3618-1.2214-8.4491-3.087-13.527-4.1458-30.51-6.3616-60.289 14.852-65.178 46.431-1.535 9.9146 0.48901 23.633 4.6837 31.745l2.2235 4.2998-11.097 11.155c-6.1034 6.1352-11.814 11.155-12.691 11.155s-3.5898-1.6024-6.0294-3.5608zm71.231-14.713c-1.65-0.31781-3-1.2938-3-2.169 0-2.0394 37.526-39.557 39.566-39.557 2.848 0 3.446 10.129 1.0788 18.272-4.6606 16.032-21.549 26.554-37.645 23.454zm-26.245-27.726c-3.0656-16.341 10.052-34.042 27.579-37.216 6.0724-1.0994 14.333 0.27294 14.333 2.3812 0 1.9822-37.551 39.501-39.535 39.501-0.82587 0-1.8956-2.1-2.3771-4.6667z" fill="#0f0f0f" stroke-width="1.3333"/>
+                 </g>
+                </svg>
+                        </button>
+        <button id="topBtn" title="Go to top" style="-ms-transform: rotate(90deg); /* IE 9 */-moz-transform: rotate(90deg); /* Firefox */-webkit-transform: rotate(90deg); /* Safari and Chrome */-o-transform: rotate(90deg); /* Opera */">&lt;</button>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("topBtnBoxThing");
+        var topBtn = document.getElementById("topBtn");
+        var HideTopBtnButton = document.getElementById("HideTopBtnButton");
+        var HideTopBtnButtonX = "0";
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            var x = document.getElementById("floatbutton");
+            if ($(".floatbutton").css("visibility") === "visible") {
+                document.getElementById("topBtnBoxThing").id = "topBtnWithMal";
+            }
+            if ($(".floatbutton").css("visibility") === "visible") {
+                document.getElementById("HideTopBtnButton").id = "topBtnWithMal2";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        $('#topBtn').click(function(e) {
+            if (e.shiftKey) {
+                window.scrollTo(0, document.body.scrollHeight)
+            } else {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0
+            }
+        });
+
+        $(document).keydown(function(e) {
+            if (e.shiftKey) {
+                $('#topBtn').css('transform', 'rotate(270deg)');
+                $('#topBtn').prop('title', 'Go to bottom')
+            }
+
+        });
+
+        $(document).keyup(function(e) {
+            if (e.which == 16) {
+                $('#topBtn').css('transform', 'rotate(90deg)');
+                $('#topBtn').prop('title', 'Go to top')
+            }
+        });
+
+
+        function HidetopBtn() {
+            document.getElementById("topBtn").style.display = "none";
+            if (HideTopBtnButtonX == 0) {
+                HideTopBtnButtonX = 1;
+            } else {
+                HideTopBtnButtonX = 0;
+            }
+
+            if (HideTopBtnButtonX == 1) {
+                topBtn.style.display = "none";
+                if (document.getElementById("HideTopBtnButton")) {
+                    document.getElementById("HideTopBtnButton").style.bottom = "25px";
+                } else if (document.getElementById("topBtnWithMal2")) {
+                    document.getElementById("topBtnWithMal2").style.bottom = "100px";
+                }
+            } else if (HideTopBtnButtonX == 0) {
+                topBtn.style.display = "none";
+                if (document.getElementById("HideTopBtnButton")) {
+                    document.getElementById("HideTopBtnButton").style.bottom = "70px";
+                } else if (document.getElementById("topBtnWithMal2")) {
+                    document.getElementById("topBtnWithMal2").style.bottom = "150px";
+                }
+                HideTopBtnButton.style.display = "none";
+            }
+        }
+
+        document.getElementById("topBtnBoxThing").addEventListener("mouseover", mouseOver);
+        document.getElementById("topBtnBoxThing").addEventListener("mouseout", mouseOut);
+
+        function mouseOver() {
+            if (topBtn.style.display = "block") {
+                HideTopBtnButton.style.display = "block";
+            }
+
+            if (HideTopBtnButtonX == 1) {
+                topBtn.style.display = "none";
+            }
+
+        }
+
+        function mouseOut() {
+            if (topBtn.style.display = "block") {
+                if (HideTopBtnButtonX == 0) {
+                    HideTopBtnButton.style.display = "none";
+                    topBtn.style.display = "block";
+                }
+            }
+            if (HideTopBtnButtonX == 1) {
+                topBtn.style.display = "none";
+            }
+        }
+    </script>
+
     <style>
         h2 {
             text-align: center;
@@ -149,6 +276,121 @@
         
         html {
             filter: contrast(100%) brightness(100%) saturate(100%);
+        }
+        
+        #topBtnBoxThing {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            height: fit-content;
+            width: fit-content;
+        }
+        
+        #topBtnBoxThing svg {
+            width: 43px !important;
+            height: 43px !important;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #topBtn {
+            min-height: 51px;
+            min-width: 40.52px;
+            border-radius: 4px;
+            font-size: 18px;
+            border: none;
+            outline: rgb(31, 31, 31) 2.9px solid;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: "Open Sans", "Hiragino Sans", Arial, sans-serif;
+            text-align: center;
+            background-color: #c44731;
+            color: #ffffff;
+        }
+        
+        #topBtnWithMal {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 47px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        #HideTopBtnButton {
+            display: none;
+            height: 40.52px;
+            width: 51px;
+            border-radius: 4px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: rgba(158, 158, 158, .2);
+            position: fixed;
+            right: 26px;
+            bottom: 70px;
+            transition: 0.3s;
+            filter: opacity(.4);
+        }
+        
+        #HideTopBtnButton:hover {
+            filter: opacity(1);
+        }
+        
+        #topBtnWithMal2 {
+            display: none;
+            height: 40.52px;
+            width: 51px;
+            border-radius: 4px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: rgba(158, 158, 158, .2);
+            position: fixed;
+            right: 43px;
+            bottom: 150px;
+            transition: 0.3s;
+            filter: opacity(.4);
+        }
+        
+        #topBtnWithMal2:hover {
+            filter: opacity(1);
+        }
+        
+        #HideTopBtnButton .hideTopBtnClr {
+            width: 43px;
+            height: 43px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            fill: white;
+        }
+        
+        #HideTopBtnButton:hover .hideTopBtnClr {
+            fill: #d8391e;
+        }
+        
+        #topBtnWithMal2 .hideTopBtnClr {
+            width: 43px;
+            height: 43px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            fill: white;
+        }
+        
+        #topBtnWithMal2:hover .hideTopBtnClr {
+            fill: #d8391e;
         }
         
         .NIGHTEYE_Filter {
