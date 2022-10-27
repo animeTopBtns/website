@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.16.2
+// @version 1.16.3
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -11,6 +11,7 @@
 // @match *://*.crunchyroll.com/*
 // @match *://*.static.crunchyroll.com/*
 // @exclude *store.crunchyroll.com/*
+// @match *://*.zoro.to/*
 // @match *://*.9anime.to/*
 // @match *://*.9anime.pl/*
 // @match *://*.9anime.id/*
@@ -371,6 +372,8 @@ if (/vrv\.co/.test (location.hostname) ) {
     </div>
 ` );
 } else if (/zoro\.to/.test (location.hostname) ) {
+$.noConflict();
+jQuery( document ).ready(function( $ ) {
     $("body").append ( `
     <div id="gmSomeID">
         <style>
@@ -387,6 +390,7 @@ if (/vrv\.co/.test (location.hostname) ) {
 </style>
     </div>
 ` );
+});
 } else if (/crunchyroll\.com/.test (location.hostname) ) {
     $("body").append ( `
     <div id="gmSomeID">
