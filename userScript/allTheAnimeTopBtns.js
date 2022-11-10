@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.16.3
+// @version 1.16.4
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -252,6 +252,9 @@ if (window.location.href.indexOf('https://anilist.co/user/') == 0) {
     $('#topBtn').css({
         backgroundColor: '#3db4f2',
     });
+    $('#HideTopBtnButton .hideTopBtnClr').css({
+      fill: '#3db4f2',
+    });
 }
 if (window.location.href.indexOf('https://readmanganato.com/') == 0 && $("body").css("backgroundColor") == "rgb(90, 84, 84)" || window.location.href.indexOf('https://manganato.com/') == 0 && $("body").css("backgroundColor") == "rgb(90, 84, 84)" ) {
     $('#topBtn').css({
@@ -468,28 +471,28 @@ body.site-theme-dark #topBtn {
     color: white;
 }
 #HideTopBtnButton .hideTopBtnClr {
-	fill: black;
+	fill: #3db4f2;
 }
 #topBtnWithMal2 .hideTopBtnClr {
-	fill: black;
-}
-#HideTopBtnButton:hover .hideTopBtnClr {
 	fill: #3db4f2;
 }
-#HideTopBtnWithMal2:hover .hideTopBtnClr {
-	fill: #3db4f2;
+#HideTopBtnButton:not(:hover) .hideTopBtnClr {
+	fill: black !important;
+}
+#HideTopBtnWithMal2:not(:hover) .hideTopBtnClr {
+	fill: black !important;
 }
 body.site-theme-dark #HideTopBtnButton .hideTopBtnClr {
-	fill: white;
+	fill: #3db4f2;
 }
 body.site-theme-dark #HideTopBtnWithMal2 .hideTopBtnClr {
-	fill: white;
-}
-body.site-theme-dark #HideTopBtnButton:hover .hideTopBtnClr {
 	fill: #3db4f2;
 }
-body.site-theme-dark #HideTopBtnWithMal2:hover .hideTopBtnClr {
-	fill: #3db4f2;
+body.site-theme-dark #HideTopBtnButton:not(:hover) .hideTopBtnClr {
+	fill: white !important;
+}
+body.site-theme-dark #HideTopBtnWithMal2:not(:hover) .hideTopBtnClr {
+	fill: white !important;
 }
 </style>
     </div>
