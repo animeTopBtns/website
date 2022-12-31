@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
     <header>
         <p class="name"><span>ANLogoS</span> <img class="logo" style="display:inline-block;" src="logox55-2.gif" alt="">
             <a class="gitBtnH" href="https://github.com/animeTopBtns/ANLogoS-AniList-Dynamic-Colored-Logos" target="_blank" rel="noopener noreferrer">
@@ -64,8 +63,8 @@
         <div class="right">
             <div class="main R">
 
-                <a href="https://anilist.co/user/WhiteTapeti/" target="_blank" rel="noopener noreferrer"><img class="mob" src="Screenshot_2022-12-21_166224.png" alt=""></a>
-                <a href="javascript:void(0)" onclick="zoomImg();"><img class="desk" id="desk" src="Screenshot_2022-12-21_155224.png" alt=""></a>
+                <a href="https://anilist.co/user/WhiteTapeti/" target="_blank" rel="noopener noreferrer"><img class="mob" src="Screenshot 2022-12-21 166224.png" alt=""></a>
+                <a href="javascript:void(0)" onclick="document.getElementsByClassName('desk').style.display = 'none';"><img class="desk" src="Screenshot 2022-12-21 155224.png" alt=""></a>
 
 
             </div>
@@ -80,22 +79,6 @@
         <a href="https://greasyfork.org/en/scripts/456970-anlogos-anilist-dynamic-colored-logos" class="downBtnF" target="_blank" rel="noopener noreferrer">Download</a></p>
 
     </footer>
-
-    <script>
-        desk = document.getElementById('desk');
-
-        const swapUrl = (imgU, img1, img2, img3, img4) => {
-            [imgL[img1], imgL[img2], imgL[img3], imgL[img4]] = [imgL[img2], imgL[img1], imgL[img4], imgL[img3]];
-        };
-
-        let imgL = ['Screenshot_2022-12-21_166224.png', 'Screenshot_2022-12-21_155224.png', 'zoom-in', 'zoom-out'];
-
-        function zoomImg() {
-            swapUrl(imgL, 0, 1, 2, 3);
-            desk.src = imgL[1];
-            desk.style.cursor = imgL[2];
-        }
-    </script>
 
 </body>
 

@@ -104,6 +104,7 @@ footer {
     }
     img.desk {
         display: block !important;
+        cursor: zoom-in;
     }
     img.mob {
         display: none !important;
