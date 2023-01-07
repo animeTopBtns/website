@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.16.4
+// @version 1.16.7
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -37,6 +37,9 @@
 // @match *://www2.gogoanime.video/*
 // @match *://gogoanime.sk/*
 // @match *://gogoanime.tel/*
+// @match *://gogoanime.news/*
+// @match *://www1.gogoanime.bid/*
+// @match *://gogoanime.ar/*
 // @match *://*.anilist.co/*
 // @match *://*.anichart.net/*
 // @match *://*.myanimelist.net/*
@@ -549,7 +552,7 @@ body.site-theme-dark #HideTopBtnWithMal2:not(:hover) .hideTopBtnClr {
 </style>
     </div>
 ` );
-} else if (/gogoanime\.io/.test (location.hostname) || /gogoanime\.video/.test (location.hostname) || /gogoanime\.sk/.test (location.hostname) || /gogoanime\.tel/.test (location.hostname) ) {
+} else if (/gogoanime\.io/.test (location.hostname) || /gogoanime\.video/.test (location.hostname) || /gogoanime\.sk/.test (location.hostname) || /gogoanime\.tel/.test (location.hostname) || /gogoanime\.news/.test (location.hostname) || /gogoanime\.bid/.test (location.hostname) || /gogoanime\.ar/.test (location.hostname) ) {
     $("body").append ( `
     <div id="gmSomeID">
         <style>
@@ -763,11 +766,6 @@ body.dark #HideTopBtnButton .hideTopBtnClr {
         <style>
 #topBtn {
   background-color: #07bf67;
-  color: black;
-}
-
-html.site-theme-dark #topBtn {
-  background-color: #07bf67;
   color: white;
 }
 
@@ -775,18 +773,12 @@ html.site-theme-dark #topBtn {
 	fill: #07bf67;
 }
 #HideTopBtnButton .hideTopBtnClr {
-	fill: black;
+	fill: white;
 }
 #HideTopBtnWithMal2:hover .hideTopBtnClr {
 	fill: #07bf67;
 }
 #HideTopBtnWithMal2 .hideTopBtnClr {
-	fill: black;
-}
-html.site-theme-dark #HideTopBtnButton .hideTopBtnClr {
-	fill: white;
-}
-html.site-theme-dark #HideTopBtnWithMal2 .hideTopBtnClr {
 	fill: white;
 }
 </style>
