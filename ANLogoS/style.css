@@ -231,15 +231,102 @@ ol {
     color: rgb(159, 173, 189);
 }
 
+h2::after {
+    content: "";
+    margin: 0px 0px;
+    outline: 2px solid rgb(126, 137, 150);
+    width: 100%;
+    outline-width: 2px;
+    height: 0px;
+    display: inline-block;
+}
+
 a,
 a:visited {
     color: rgb(61, 180, 242);
+}
+
+
+/* NUTSHELL */
+
+.nutshell-heading-embed img {
+    filter: invert(68%) sepia(14%) saturate(344%) hue-rotate(172deg) brightness(100%) contrast(84%);
+}
+
+h1 {
+    display: none;
+}
+
+.nutshell-expandable,
+.nutshell-expandable:hover {
+    color: rgb(61, 180, 242);
+}
+
+.nutshell-expandable::after {
+    content: " ";
+    height: 17px;
+    width: 17px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-image: url("helpIcon.svg");
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nutshell-ball-up,
+.nutshell-ball-down {
+    background: rgb(61, 180, 242) none repeat scroll 0% 0%;
+}
+
+.nutshell-bubble-arrow {
+    border-bottom-color: rgb(61, 180, 242) !important;
+}
+
+.nutshell-bubble {
+    border-color: rgb(61, 180, 242) !important;
+    background: rgb(21, 34, 50) none repeat scroll 0% 0% !important;
+}
+
+.nutshell-bubble-overflow-section h2,
+.nutshell-bubble-overflow-section p,
+.nutshell-bubble-overflow-section ol {
+    color: rgb(61, 180, 242);
+}
+
+.nutshell-bubble-overflow-embed-button img {
+    filter: invert(67%) sepia(89%) saturate(2082%) hue-rotate(171deg) brightness(96%) contrast(98%);
+}
+
+.nutshell-bubble-overflow-close {
+    color: rgb(61, 180, 242);
+}
+
+#nutshell-embed-modal-bubble {
+    background: rgb(21, 34, 50);
+}
+
+#nutshell-embed-modal-bubble input {
+    background-color: rgb(21, 34, 50);
+    border-color: rgb(61, 180, 242);
+    color: rgb(151, 166, 183);
+}
+
+#nutshell-embed-modal-bubble {
+    color: rgb(61, 180, 242);
+    font-size: 20px;
+    line-height: 1.5em;
 }
 
 helpBtn {
     color: rgb(61, 180, 242);
     cursor: pointer;
 }
+
+
+/* OLD AND BAD HELP PROMPT */
 
 helpImg:not(helpPromp) {
     content: " ";
