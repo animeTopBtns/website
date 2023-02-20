@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.16.8
+// @version 1.16.9
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -1005,28 +1005,20 @@ html.dark #topBtn {
   color: #fff;
 }
 
-html.dark #HideTopBtnButton .hideTopBtnClr {
-	fill: #fff;
-}
-
 #HideTopBtnButton .hideTopBtnClr {
-	fill: #000;
+	fill: #2563eb;
 }
 
 #HideTopBtnButton:hover .hideTopBtnClr {
-	fill: #000;
-}
-
-html.dark topBtnWithMal2 .hideTopBtnClr {
-	fill: #fff;
+	fill: #2563eb;
 }
 
 topBtnWithMal2 .hideTopBtnClr {
-	fill: #000;
+	fill: #2563eb;
 }
 
 topBtnWithMal2:hover .hideTopBtnClr {
-	fill: #000;
+	fill: #2563eb;
 }
 </style>
     </div>
