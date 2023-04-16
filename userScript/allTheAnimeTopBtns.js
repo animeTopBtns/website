@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.16.10
+// @version 1.16.11
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -127,6 +127,8 @@ $("body").append ( `
   border: none;
   outline: none;
   cursor: pointer;
+  font-weight: bold;
+  font-family: "Open Sans", "Hiragino Sans", Arial, sans-serif;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
@@ -195,7 +197,7 @@ $("body").append ( `
 	        filter: opacity(1);
 }
 
-#HideTopBtnButton .hideTopBtnClr {
+#HideTopBtnButton .hideTopBtnClr, #topBtnWithMal2 .hideTopBtnClr {
 	width: 43px;
 	height: 43px;
 	margin-left: auto;
@@ -204,20 +206,12 @@ $("body").append ( `
     fill: white;
 }
 
-#HideTopBtnButton:hover .hideTopBtnClr {
-    fill: white;
+#HideTopBtnButton svg, #topBtnWithMal2 svg {
+  width: 43px;
+  height: 43px;
 }
 
-#topBtnWithMal2 .hideTopBtnClr {
-	width: 43px;
-	height: 43px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-    fill: white;
-}
-
-#topBtnWithMal2:hover .hideTopBtnClr {
+#HideTopBtnButton:hover .hideTopBtnClr, #topBtnWithMal2:hover .hideTopBtnClr {
     fill: white;
 }
 
@@ -444,14 +438,8 @@ jQuery( document ).ready(function( $ ) {
 #HideTopBtnButton:hover .hideTopBtnClr {
 	fill: #df6300;
 }
-button#HideTopBtnButton img {
-    border: none;
-}
 #topBtnWithMal2:hover .hideTopBtnClr {
 	fill: #df6300;
-}
-button#topBtnWithMal2 img {
-    border: none;
 }
 </style>
     </div>
@@ -469,12 +457,6 @@ button#topBtnWithMal2 img {
 }
 #HideTopBtnWithMal2:hover .hideTopBtnClr {
 	fill: #E6613E;
-}
-button#HideTopBtnButton img {
-    border: none;
-}
-button#topBtnWithMal2 img {
-    border: none;
 }
 </style>
     </div>
@@ -584,6 +566,22 @@ body.site-theme-dark #HideTopBtnWithMal2:not(:hover) .hideTopBtnClr {
 }
 #HideTopBtnWithMal2:hover .hideTopBtnClr {
 	fill: #2e51a2;
+}
+html.dark-mode #topBtn {
+  background-color: #003f75 !important;
+}
+html.dark-mode #HideTopBtnButton:hover .hideTopBtnClr {
+	fill: #003f75 !important;
+    background: rgb(136, 136, 136) !important;
+}
+html.dark-mode #HideTopBtnWithMal2:hover .hideTopBtnClr {
+	fill: #003f75 !important;
+}
+html.dark-mode #HideTopBtnButton:hover {
+    background: rgb(136, 136, 136) !important;
+}
+html.dark-mode #HideTopBtnWithMal2:hover {
+    background: rgb(136, 136, 136) !important;
 }
 </style>
     </div>
@@ -808,14 +806,8 @@ body.dark #HideTopBtnButton .hideTopBtnClr {
 #HideTopBtnButton:hover .hideTopBtnClr {
 	fill: #07bf67;
 }
-#HideTopBtnButton .hideTopBtnClr {
-	fill: white;
-}
 #HideTopBtnWithMal2:hover .hideTopBtnClr {
 	fill: #07bf67;
-}
-#HideTopBtnWithMal2 .hideTopBtnClr {
-	fill: white;
 }
 </style>
     </div>
@@ -904,6 +896,12 @@ body.dark #HideTopBtnButton .hideTopBtnClr {
   background-color: #ff530d;
   color: white;
 }
+#HideTopBtnButton:hover .hideTopBtnClr {
+	fill: #ff530d;
+}
+#HideTopBtnWithMal2:hover .hideTopBtnClr {
+	fill: #ff530d;
+}
 #top {
   display: none !IMPORTANT;
 }
@@ -949,14 +947,6 @@ jQuery( document ).ready(function( $ ) {
   color: #fff;
   outline: #121212 2.9px solid;
 }
-
-#HideTopBtnButton .hideTopBtnClr {
-	fill: #fff;
-}
-
-topBtnWithMal2 .hideTopBtnClr {
-	fill: #fff;
-}
 </style>
     </div>
 ` );
@@ -968,14 +958,6 @@ topBtnWithMal2 .hideTopBtnClr {
 #topBtn {
   background-color: #3b97fc;
   color: #fff;
-}
-
-#HideTopBtnButton .hideTopBtnClr {
-	fill: #3b97fc;
-}
-
-topBtnWithMal2 .hideTopBtnClr {
-	fill: #3b97fc;
 }
 
 #HideTopBtnButton:hover .hideTopBtnClr {
@@ -997,15 +979,7 @@ topBtnWithMal2:hover .hideTopBtnClr {
   color: #1f1f1f;
 }
 
-#HideTopBtnButton .hideTopBtnClr {
-	fill: #fe78e4;
-}
-
 #HideTopBtnButton:hover .hideTopBtnClr {
-	fill: #fe78e4;
-}
-
-topBtnWithMal2 .hideTopBtnClr {
 	fill: #fe78e4;
 }
 
@@ -1028,20 +1002,20 @@ html.dark #topBtn {
   color: #fff;
 }
 
-#HideTopBtnButton .hideTopBtnClr {
+html.dark #HideTopBtnButton:hover .hideTopBtnClr {
+	fill: #2563eb;
+}
+
+html.dark #topBtnWithMal2:hover .hideTopBtnClr {
 	fill: #2563eb;
 }
 
 #HideTopBtnButton:hover .hideTopBtnClr {
-	fill: #2563eb;
+	fill: #3b82f6;
 }
 
-topBtnWithMal2 .hideTopBtnClr {
-	fill: #2563eb;
-}
-
-topBtnWithMal2:hover .hideTopBtnClr {
-	fill: #2563eb;
+#topBtnWithMal2:hover .hideTopBtnClr {
+	fill: #3b82f6;
 }
 </style>
     </div>
@@ -1058,15 +1032,7 @@ html.darkmode #topBtn {
   color: #fff;
 }
 
-#HideTopBtnButton .hideTopBtnClr {
-	fill: #ef5040;
-}
-
 #HideTopBtnButton:hover .hideTopBtnClr {
-	fill: #ef5040;
-}
-
-topBtnWithMal2 .hideTopBtnClr {
 	fill: #ef5040;
 }
 
@@ -1088,15 +1054,7 @@ html.darkmode #topBtn {
   color: #fff;
 }
 
-#HideTopBtnButton .hideTopBtnClr {
-	fill: #0062d7;
-}
-
 #HideTopBtnButton:hover .hideTopBtnClr {
-	fill: #0062d7;
-}
-
-topBtnWithMal2 .hideTopBtnClr {
 	fill: #0062d7;
 }
 
