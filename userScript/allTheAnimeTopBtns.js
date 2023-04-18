@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.16.12
+// @version 1.16.13
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -265,6 +265,7 @@ function scrollFunction() {
   }
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
       document.getElementById("topBtnWithMal2").style.right = "-2239px";
+      document.getElementById("HideTopBtnButton").style.right = "-2239px";
   }
 
 if (/myanimelist\.net/.test (location.hostname) ) {
@@ -337,11 +338,7 @@ $(document).keyup(function (e) {
 
 function HidetopBtn() {
   document.getElementById("topBtn").style.display = "none";
-  if (HideTopBtnButtonX == 0) {
-  HideTopBtnButtonX = 1;
-  } else {
-   HideTopBtnButtonX = 0;
-   }
+HideTopBtnButtonX = (HideTopBtnButtonX == 0) ? 1 : 0;
 
   if (HideTopBtnButtonX == 1) {
   topBtn.style.display = "none";
