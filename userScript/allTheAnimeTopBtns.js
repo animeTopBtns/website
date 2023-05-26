@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.16.14
+// @version 1.16.15
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -257,14 +257,18 @@ function scrollFunction() {
     document.getElementById("topBtnBoxThing").id = "topBtnWithMal";
     document.getElementById("HideTopBtnButton").id = "topBtnWithMal2";
   }
-  if ($( ".mobile-nav" ).css("visibility") === "visible" && elementExists !== null) {
-    document.getElementById("topBtnBoxThing").id = "topBtnWithMal";
-    document.getElementById("HideTopBtnButton").id = "topBtnWithMal2";
-    document.getElementById("topBtnWithMal").style.right = "24px";
-    document.getElementById("topBtnWithMal").style.bottom = "79px";
-  }
-  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-      if (elementExists !== null) {document.getElementById("HideTopBtnButton").style.right = "-2239px";} else {document.getElementById("topBtnWithMal2").style.right = "-2239px";}
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if (elementExists !== null) {
+        document.getElementById("HideTopBtnButton").style.right = "-2239px";
+        if ($(".mobile-nav").css("visibility") === "visible" && elementExists !== null) {
+            document.getElementById("topBtnBoxThing").id = "topBtnWithMal";
+            document.getElementById("HideTopBtnButton").id = "topBtnWithMal2";
+            document.getElementById("topBtnWithMal").style.right = "24px";
+            document.getElementById("topBtnWithMal").style.bottom = "79px";
+        }
+    } else {
+        document.getElementById("topBtnWithMal2").style.right = "-2239px";
+    }
   }
 
 if (/myanimelist\.net/.test (location.hostname) ) {
