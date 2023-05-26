@@ -233,6 +233,13 @@
     </script>
 
     <style>
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: >0.001%,defaults,maintained node versions,last 4 versions,not dead
+*/
+
         h2 {
             text-align: center;
         }
@@ -254,7 +261,8 @@
         }
         
         embed[type="application/pdf"] {
-            filter: invert(90%);
+            -webkit-filter: invert(90%);
+                    filter: invert(90%);
         }
         
         html {
@@ -281,7 +289,8 @@
         }
         
         html {
-            filter: contrast(100%) brightness(100%) saturate(100%);
+            -webkit-filter: contrast(100%) brightness(100%) saturate(100%);
+                    filter: contrast(100%) brightness(100%) saturate(100%);
         }
         
         #topBtnBoxThing {
@@ -290,7 +299,11 @@
             bottom: 20px;
             right: 30px;
             z-index: 99;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
             height: fit-content;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
             width: fit-content;
         }
         
@@ -305,7 +318,9 @@
         #topBtn {
             min-height: 51px;
             min-width: 40.52px;
-            border-radius: 4px;
+            -webkit-border-radius: 4px;
+               -moz-border-radius: 4px;
+                    border-radius: 4px;
             font-size: 18px;
             border: none;
             outline: rgb(31, 31, 31) 2.9px solid;
@@ -327,7 +342,9 @@
             border: none;
             outline: none;
             cursor: pointer;
-            border-radius: 4px;
+            -webkit-border-radius: 4px;
+               -moz-border-radius: 4px;
+                    border-radius: 4px;
             text-align: center;
         }
         
@@ -335,7 +352,9 @@
             display: none;
             height: 40.52px;
             width: 51px;
-            border-radius: 4px;
+            -webkit-border-radius: 4px;
+               -moz-border-radius: 4px;
+                    border-radius: 4px;
             font-size: 18px;
             border: none;
             outline: none;
@@ -344,19 +363,26 @@
             position: fixed;
             right: 26px;
             bottom: 70px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            -moz-transition: 0.3s;
             transition: 0.3s;
-            filter: opacity(.4);
+            -webkit-filter: opacity(.4);
+                    filter: opacity(.4);
         }
         
         #HideTopBtnButton:hover {
-            filter: opacity(1);
+            -webkit-filter: opacity(1);
+                    filter: opacity(1);
         }
         
         #topBtnWithMal2 {
             display: none;
             height: 40.52px;
             width: 51px;
-            border-radius: 4px;
+            -webkit-border-radius: 4px;
+               -moz-border-radius: 4px;
+                    border-radius: 4px;
             font-size: 18px;
             border: none;
             outline: none;
@@ -365,12 +391,17 @@
             position: fixed;
             right: 43px;
             bottom: 150px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            -moz-transition: 0.3s;
             transition: 0.3s;
-            filter: opacity(.4);
+            -webkit-filter: opacity(.4);
+                    filter: opacity(.4);
         }
         
         #topBtnWithMal2:hover {
-            filter: opacity(1);
+            -webkit-filter: opacity(1);
+                    filter: opacity(1);
         }
         
         #HideTopBtnButton .hideTopBtnClr {
@@ -425,7 +456,9 @@
         }
         
         .NIGHTEYE_TransformZ {
-            transform: translateZ(0px);
+            -webkit-transform: translateZ(0px);
+               -moz-transform: translateZ(0px);
+                    transform: translateZ(0px);
         }
         
         @media (min-width: 1025px) {
@@ -438,7 +471,10 @@
             fieldset {
                 width: 20vw !important;
                 left: 50% !important;
-                transform: translateX(-50%) !important;
+                -webkit-transform: translateX(-50%) !important;
+                   -moz-transform: translateX(-50%) !important;
+                     -o-transform: translateX(-50%) !important;
+                        transform: translateX(-50%) !important;
                 position: relative !important;
             }
             h1 {
@@ -464,7 +500,10 @@
                 height: 1.109vw !important;
             }
             malhelp {
-                transform-origin: center top !important;
+                -webkit-transform-origin: center top !important;
+                   -moz-transform-origin: center top !important;
+                     -o-transform-origin: center top !important;
+                        transform-origin: center top !important;
             }
             input.DownloadBtn {
                 font-size: 2vw !important;
@@ -518,13 +557,22 @@
         }
         
         malhelp {
-            transform: scale(0);
+            -webkit-transform: scale(0);
+               -moz-transform: scale(0);
+                 -o-transform: scale(0);
+                    transform: scale(0);
             display: block;
             position: absolute;
             background-color: rgb(28, 28, 33);
             max-width: 92%;
+            -webkit-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            -moz-transition: all 0.5s ease 0s;
             transition: all 0.5s ease 0s;
-            transform-origin: center top;
+            -webkit-transform-origin: center top;
+               -moz-transform-origin: center top;
+                 -o-transform-origin: center top;
+                    transform-origin: center top;
             cursor: text !important;
         }
         
@@ -533,14 +581,26 @@
         }
         
         p.MAL:hover malhelp {
-            transform: scale(1);
+            -webkit-transform: scale(1);
+               -moz-transform: scale(1);
+                 -o-transform: scale(1);
+                    transform: scale(1);
         }
         
         form {
             margin-top: 5.409vw;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+               -moz-box-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+               -moz-box-align: center;
+                    align-items: center;
             border-width: 0.487vw;
         }
         
