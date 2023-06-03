@@ -9,7 +9,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=splatoonwiki.org
 // @grant        GM_addStyle
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
-// @require      https://github.com/animeTopBtns/website/raw/main/Inkapedia%20DarkMode%20fix/userScript/Inkapedia-DarkMode-fix2.user.js
+// @require      https://greasyfork.org/scripts/467838-inkapedia-darkmode-fix/code/Inkapedia%20DarkMode%20fix.user.js
 // @run-at       document-start
 // ==/UserScript==
 
