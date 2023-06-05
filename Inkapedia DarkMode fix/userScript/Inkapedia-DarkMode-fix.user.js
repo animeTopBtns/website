@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Inkapedia DarkMode fix
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.0.1
 // @description  Userscript/Userstyle that aims to fix problems with the Inkapedia's darkmode (not fully complete)
-// @author       You
+// @author       WhiteTapeti
 // @match        *://splatoonwiki.org/*
 // @match        *://syndication.twitter.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=splatoonwiki.org
