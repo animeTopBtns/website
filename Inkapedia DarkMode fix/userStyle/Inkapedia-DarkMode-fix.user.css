@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Inkapedia DarkMode fix
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.2
 @description    Userstyle that aims to fix problems with the inkapedia darkmode (not fully complete)
 @author         WhiteTapeti
 ==/UserStyle== */
@@ -34,6 +34,25 @@
     }
     .navpopup {
         background-color: #27262c;
+    }
+    .popup_drop:hover {
+        background: #323137;
+    }
+    .popup_drop:hover .popup_menu,
+    .popup_drop .popup_menu:hover {
+        background: #323137;
+    }
+    .mw_metadata th {
+        background-color: #202020;
+    }
+    .mw_metadata td {
+        background-color: #202020;
+    }
+    #filetoc {
+        background-color: #202020;
+    }
+    .searchButton[name='go'] {
+        background: no-repeat center / 1.23076923em url(https://files.catbox.moe/gwcelc.svg);
     }
 }
 
