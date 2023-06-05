@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Inkapedia DarkMode fix
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0.1
+// @version      0.1.1
 // @description  Userscript/Userstyle that aims to fix problems with the Inkapedia's darkmode (not fully complete)
 // @author       WhiteTapeti
 // @match        *://splatoonwiki.org/*
@@ -22,5 +22,5 @@ if (window.top !== window.self) {
 }
 
 if (/https:\/\/splatoonwiki\.org\/wiki\/Special:.*/i.test(window.location.href) == false) {
-    GM_addStyle(`html { color-scheme: dark !important; }nav#p-views .selected, nav#p-namespaces .selected, nav#p-namespaces li, nav#p-views li, nav#p-cactions {background-color: #27262c;}.vector-menu-dropdown .vector-menu-heading:after{-webkit-filter:invert(1)!important;filter:invert(1)!important} audio { border: solid #8c8c8c !important; -webkit-border-radius: 2000px !important; -moz-border-radius: 2000px !important; border-radius: 2000px !important; }.mw-parser-output .bigrun {background-image: url('https://files.catbox.moe/ly7j6l.svg')!important;}.mw-parser-output .splatfest {background-image: url('https://files.catbox.moe/0ui5mm.svg')!important;}`);
+    GM_addStyle(`html { color-scheme: dark !important; }nav#p-views .selected, nav#p-namespaces .selected, nav#p-namespaces li, nav#p-views li, nav#p-cactions {background-color: #27262c;}.vector-menu-dropdown .vector-menu-heading:after{-webkit-filter:invert(1)!important;filter:invert(1)!important} audio { border: solid #8c8c8c !important; -webkit-border-radius: 2000px !important; -moz-border-radius: 2000px !important; border-radius: 2000px !important; }.mw-parser-output .bigrun {background-image: url('https://files.catbox.moe/ly7j6l.svg')!important;}.mw-parser-output .splatfest {background-image: url('https://files.catbox.moe/0ui5mm.svg')!important;}.navpopup{background-color: #27262c!important;}`);
 }
