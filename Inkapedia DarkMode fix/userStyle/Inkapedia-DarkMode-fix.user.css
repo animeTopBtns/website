@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Inkapedia DarkMode fix
 @namespace      github.com/openstyles/stylus
-@version        1.2
+@version        1.4
 @description    Userstyle that aims to fix problems with the inkapedia darkmode (not fully complete)
 @author         WhiteTapeti
 ==/UserStyle== */
@@ -30,7 +30,10 @@
         background-image: url('https://files.catbox.moe/0ui5mm.svg')!important;
     }
     .mw-parser-output .bubbleamiibobg {
-        background-image: url("https://files.catbox.moe/t9nuda.svg");
+        background-image: url("https://files.catbox.moe/t9nuda.svg")!important;
+    }
+    .mw-parser-output .grizzco {
+        background-image: url("https://files.catbox.moe/fy9pfq.svg")!important;
     }
     .navpopup {
         background-color: #27262c;
@@ -53,6 +56,13 @@
     }
     .searchButton[name='go'] {
         background: no-repeat center / 1.23076923em url(https://files.catbox.moe/gwcelc.svg);
+    }
+    .textwidget,
+    .cd {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+    }
+    .btextwidget {
+        background-color: rgba(255, 255, 255, 0.1) !important;
     }
 }
 
