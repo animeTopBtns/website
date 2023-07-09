@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 1.16.15
+// @version 1.16.16
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -14,6 +14,7 @@
 // @match *://*.zoro.to/*
 // @match *://*.9anime.to/*
 // @match *://*.9anime.pl/*
+// @match *://*.9anime.ph/*
 // @match *://*.9anime.id/*
 // @match *://*.9anime.is/*
 // @match *://*.9anime.ru/*
@@ -31,6 +32,8 @@
 // @match *://*.9anime.club/*
 // @match *://*.9anime.center/*
 // @match *://*.9anime.gs/*
+// @match *://*.9animehq.to/*
+// @match *://*.9animehq.io/*
 // @match *://*.kissanime.ru/*
 // @match *://*.kissanime.pro/*
 // @match *://www19.gogoanime.io/*
@@ -469,7 +472,7 @@ jQuery( document ).ready(function( $ ) {
 </style>
     </div>
 ` );
-} else if (/9anime\.ru/.test (location.hostname) || /9anime\.me/.test (location.hostname) || /9anime\.pl/.test (location.hostname) || /9anime\.to/.test (location.hostname) || /9anime\.id/.test (location.hostname) || /9anime\.is/.test (location.hostname) || /9anime\.ch/.test (location.hostname) || /9anime\.nl/.test (location.hostname) || /9anime\.live/.test (location.hostname) || /9anime\.one/.test (location.hostname) || /9anime\.page/.test (location.hostname) || /9anime\.video/.test (location.hostname) || /9anime\.life/.test (location.hostname) || /9anime\.love/.test (location.hostname) || /9anime\.tv/.test (location.hostname) || /9anime\.id/.test (location.hostname) || /9anime\.club/.test (location.hostname) || /9anime\.center/.test (location.hostname) || /9anime\.gs/.test (location.hostname) || /animelab\.com/.test (location.hostname) ) {
+} else if (/9anime\.ru/.test (location.hostname) || /9anime\.me/.test (location.hostname) || /9anime\.pl/.test (location.hostname) || /9anime\.ph/.test (location.hostname) || /9anime\.to/.test (location.hostname) || /9anime\.id/.test (location.hostname) || /9anime\.is/.test (location.hostname) || /9anime\.ch/.test (location.hostname) || /9anime\.nl/.test (location.hostname) || /9anime\.live/.test (location.hostname) || /9anime\.one/.test (location.hostname) || /9anime\.page/.test (location.hostname) || /9anime\.video/.test (location.hostname) || /9anime\.life/.test (location.hostname) || /9anime\.love/.test (location.hostname) || /9anime\.tv/.test (location.hostname) || /9anime\.id/.test (location.hostname) || /9anime\.club/.test (location.hostname) || /9anime\.center/.test (location.hostname) || /9anime\.gs/.test (location.hostname) || /9animehq\.to/.test (location.hostname) || /9animehq\.io/.test (location.hostname) || /animelab\.com/.test (location.hostname) ) {
     $("body").append ( `
     <div id="gmSomeID">
         <style>
