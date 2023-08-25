@@ -5,6 +5,7 @@ This repository is the home of the websites made for some of my UserScripts as w
 [All the anime top buttons](https://animetopbtns.github.io/website/) (The root path on this repository)  
 [ANLogoS (AniList Dynamic Colored Logos)](https://animetopbtns.github.io/website/ANLogoS/)  
 [Inkapedia DarkMode fix](https://github.com/animeTopBtns/website/tree/main/Inkapedia%20DarkMode%20fix/userScript) (does not have a website at the moment)
+[Fix ZZZ Opera Music](https://github.com/animeTopBtns/website/tree/main/Fix%20ZZZ%20Opera%20Music/userScript)  (does not have a website at the moment)
 
 All the anime top buttons
 =========================

@@ -1,0 +1,1 @@
+Fixes the music not playing in the Opera Browser on the [Zenless Zone Zero](https://zenless.hoyoverse.com/) website.
