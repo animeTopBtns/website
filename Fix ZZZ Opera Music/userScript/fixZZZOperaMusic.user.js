@@ -42,16 +42,16 @@ function getSoundAndFadeAudio(e) {
     if (e == 1) {
         loaded = 1;
     }
-    // Set the point in playback that fadeout begins. This is for a 2 second fade out.
+    // Set the point in playback that fadein begins.
     var fadePoint = audio.duration - 1;
 
     var fadeAudio = setInterval(function() {
 
-        // Only fade if past the fade out point or not at zero already
+        // Only fade if past the fade in point or not at one already
         if ((audio.currentTime <= fadePoint) && (audio.volume !== 1)) {
             audio.volume = Number(audio.volume + 0.1).toFixed(1);
         }
-        // When volume at zero stop all the intervalling
+        // When volume at one stop all the intervalling
         if (audio.volume === 1) {
             clearInterval(fadeAudio);
         }
