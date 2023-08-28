@@ -658,12 +658,26 @@
         #SideNav {
             position: fixed;
             margin: 0px;
-            height: -webkit-fill-available;
+            width: 100%;
+            width: -moz-available;
+            /* WebKit-based browsers will ignore this. */
+            width: -webkit-fill-available;
+            /* Mozilla-based browsers will ignore this. */
+            width: fill-available;
             background-color: #454545;
             width: 25%;
             z-index: 2;
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            -o-transform: scaleX(0);
             transform: scaleX(0);
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -moz-transition: all 0.3s;
             transition: all 0.3s;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
             transform-origin: left center;
         }
         
