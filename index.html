@@ -15,9 +15,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body style="
-    margin: 0;
-    ">
+<body style="margin: 0;">
+    <img class="SideNav" src="SideNav.svg" onclick="this.src=='http://' + location.host + '/SideNav.svg' ? SideNav(this, 2) : SideNav(this, 1)" onselectstart="return false" ondragstart="return false"></img>
+    <div id="SideNav">
+        <p><a href="#" style="color: #c44731;">All The Anime Top Btns <img src="Circle-icons-arrow-up.png" height="47px"></a></p>
+        <p><a href="ANLogoS" style="color: #3db4f2;">ANLogoS <img src="ANLogoS/logox55-3.gif"></a></p>
+    </div>
     <div class="LogoDiv">
         <img class="LogoImg" src="Circle-icons-arrow-up.png" alt="All The Anime Top Buttons Logo">
         <span class="LogoTxt">All The Anime Top Btns</span>
@@ -230,16 +233,28 @@
                 topBtn.style.display = "none";
             }
         }
+
+        function SideNav(e, el) {
+            if (el == 2) {
+                e.src = 'SideNav2.svg';
+                e.style.position = 'fixed';
+                document.getElementById('SideNav').style.transform = 'scaleX(1)';
+            } else {
+                e.src = 'SideNav.svg';
+                e.style.position = 'absolute';
+                document.getElementById('SideNav').style.transform = 'scaleX(0)';
+            }
+        }
     </script>
 
     <style>
-/*
+        /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
 * Browsers: >0.001%,defaults,maintained node versions,last 4 versions,not dead
 */
-
+        
         h2 {
             text-align: center;
         }
@@ -262,7 +277,7 @@
         
         embed[type="application/pdf"] {
             -webkit-filter: invert(90%);
-                    filter: invert(90%);
+            filter: invert(90%);
         }
         
         html {
@@ -290,7 +305,7 @@
         
         html {
             -webkit-filter: contrast(100%) brightness(100%) saturate(100%);
-                    filter: contrast(100%) brightness(100%) saturate(100%);
+            filter: contrast(100%) brightness(100%) saturate(100%);
         }
         
         #topBtnBoxThing {
@@ -319,8 +334,8 @@
             min-height: 51px;
             min-width: 40.52px;
             -webkit-border-radius: 4px;
-               -moz-border-radius: 4px;
-                    border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
             font-size: 18px;
             border: none;
             outline: rgb(31, 31, 31) 2.9px solid;
@@ -343,8 +358,8 @@
             outline: none;
             cursor: pointer;
             -webkit-border-radius: 4px;
-               -moz-border-radius: 4px;
-                    border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
             text-align: center;
         }
         
@@ -353,8 +368,8 @@
             height: 40.52px;
             width: 51px;
             -webkit-border-radius: 4px;
-               -moz-border-radius: 4px;
-                    border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
             font-size: 18px;
             border: none;
             outline: none;
@@ -368,12 +383,12 @@
             -moz-transition: 0.3s;
             transition: 0.3s;
             -webkit-filter: opacity(.4);
-                    filter: opacity(.4);
+            filter: opacity(.4);
         }
         
         #HideTopBtnButton:hover {
             -webkit-filter: opacity(1);
-                    filter: opacity(1);
+            filter: opacity(1);
         }
         
         #topBtnWithMal2 {
@@ -381,8 +396,8 @@
             height: 40.52px;
             width: 51px;
             -webkit-border-radius: 4px;
-               -moz-border-radius: 4px;
-                    border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
             font-size: 18px;
             border: none;
             outline: none;
@@ -396,12 +411,12 @@
             -moz-transition: 0.3s;
             transition: 0.3s;
             -webkit-filter: opacity(.4);
-                    filter: opacity(.4);
+            filter: opacity(.4);
         }
         
         #topBtnWithMal2:hover {
             -webkit-filter: opacity(1);
-                    filter: opacity(1);
+            filter: opacity(1);
         }
         
         #HideTopBtnButton .hideTopBtnClr {
@@ -457,8 +472,8 @@
         
         .NIGHTEYE_TransformZ {
             -webkit-transform: translateZ(0px);
-               -moz-transform: translateZ(0px);
-                    transform: translateZ(0px);
+            -moz-transform: translateZ(0px);
+            transform: translateZ(0px);
         }
         
         @media (min-width: 1025px) {
@@ -472,14 +487,28 @@
                 width: 20vw !important;
                 left: 50% !important;
                 -webkit-transform: translateX(-50%) !important;
-                   -moz-transform: translateX(-50%) !important;
-                     -o-transform: translateX(-50%) !important;
-                        transform: translateX(-50%) !important;
+                -moz-transform: translateX(-50%) !important;
+                -o-transform: translateX(-50%) !important;
+                transform: translateX(-50%) !important;
                 position: relative !important;
             }
             h1 {
                 font-size: 1.667vw !important;
                 border-bottom: 0.5vw dashed rgb(196, 71, 49) !important;
+            }
+            .SideNav {
+                position: absolute;
+                left: 0.5208333333333334vw !important;
+                top: 0.7vw !important;
+                cursor: pointer;
+                width: 3.165vw !important;
+                z-index: 3;
+            }
+            #SideNav p {
+                text-align: left;
+                margin-top: 66px !important;
+                font-size: xx-large !important;
+                margin-left: 40px;
             }
             .LogoDiv {
                 text-align: center !important;
@@ -501,9 +530,9 @@
             }
             malhelp {
                 -webkit-transform-origin: center top !important;
-                   -moz-transform-origin: center top !important;
-                     -o-transform-origin: center top !important;
-                        transform-origin: center top !important;
+                -moz-transform-origin: center top !important;
+                -o-transform-origin: center top !important;
+                transform-origin: center top !important;
             }
             input.DownloadBtn {
                 font-size: 2vw !important;
@@ -558,9 +587,9 @@
         
         malhelp {
             -webkit-transform: scale(0);
-               -moz-transform: scale(0);
-                 -o-transform: scale(0);
-                    transform: scale(0);
+            -moz-transform: scale(0);
+            -o-transform: scale(0);
+            transform: scale(0);
             display: block;
             position: absolute;
             background-color: rgb(28, 28, 33);
@@ -570,9 +599,9 @@
             -moz-transition: all 0.5s ease 0s;
             transition: all 0.5s ease 0s;
             -webkit-transform-origin: center top;
-               -moz-transform-origin: center top;
-                 -o-transform-origin: center top;
-                    transform-origin: center top;
+            -moz-transform-origin: center top;
+            -o-transform-origin: center top;
+            transform-origin: center top;
             cursor: text !important;
         }
         
@@ -582,9 +611,9 @@
         
         p.MAL:hover malhelp {
             -webkit-transform: scale(1);
-               -moz-transform: scale(1);
-                 -o-transform: scale(1);
-                    transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
         }
         
         form {
@@ -595,12 +624,12 @@
             display: flex;
             -webkit-box-pack: center;
             -webkit-justify-content: center;
-               -moz-box-pack: center;
-                    justify-content: center;
+            -moz-box-pack: center;
+            justify-content: center;
             -webkit-box-align: center;
             -webkit-align-items: center;
-               -moz-box-align: center;
-                    align-items: center;
+            -moz-box-align: center;
+            align-items: center;
             border-width: 0.487vw;
         }
         
@@ -613,13 +642,41 @@
             cursor: pointer;
         }
         
-        .LogoDiv {}
+        .SideNav {
+            position: absolute;
+            left: 5.520833vw;
+            top: 16.4vw;
+            cursor: pointer;
+            width: 12.165vw;
+            z-index: 3;
+        }
+        
+        #SideNav p+p {
+            margin-top: 5px !important;
+        }
+        
+        #SideNav {
+            position: fixed;
+            margin: 0px;
+            height: -webkit-fill-available;
+            background-color: #454545;
+            width: 25%;
+            z-index: 2;
+            transform: scaleX(0);
+            transition: all 0.3s;
+            transform-origin: left center;
+        }
+        
+        #SideNav p {
+            margin-top: 130px;
+        }
         
         img.LogoImg {
             width: 12.165vw;
             height: auto;
             margin-left: 3.406vw;
             margin-bottom: -1.303vw;
+            z-index: 3;
         }
         
         span.LogoTxt {

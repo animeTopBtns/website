@@ -57,6 +57,59 @@ footer {
     position: relative;
 }
 
+.SideNav {
+    position: absolute;
+    left: 5.520833vw;
+    top: 5.7vw;
+    cursor: pointer;
+    width: 12.165vw;
+    z-index: 3;
+}
+
+@media (min-width: 1025px) {
+    #SideNav p {
+        font-size: xx-large !important;
+        margin-left: 40px;
+        text-align: left !important;
+    }
+    .SideNav {
+        position: absolute;
+        left: 0.5208333333333334vw;
+        top: 0.7vw;
+        cursor: pointer;
+        width: 3.165vw !important;
+        z-index: 3;
+    }
+}
+
+#SideNav p {
+    text-align: left;
+    margin-top: 66px;
+    font-size: 3.893vw;
+    text-align: center;
+}
+
+#SideNav p+p {
+    margin-top: 5px;
+}
+
+#SideNav {
+    position: fixed;
+    margin: 0px;
+    height: -webkit-fill-available;
+    background-color: #172e48;
+    width: 25%;
+    z-index: 2;
+    transform: scaleX(0);
+    transition: all 0.3s;
+    transform-origin: left center;
+}
+
+
+/* #SideNav p {
+    margin-top: 90px;
+} */
+
 @media (min-width: 1025px) {
     header {
         -webkit-box-pack: left;
@@ -67,7 +120,7 @@ footer {
         display: none;
     }
     .name {
-        margin-left: 50px;
+        margin-left: 90px;
     }
     .downBtnH {
         position: absolute;

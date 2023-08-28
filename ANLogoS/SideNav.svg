@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="164.61375mm"
+   height="120.3544mm"
+   viewBox="0 0 164.61375 120.3544"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="SideNav.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="0.81526396"
+     inkscape:cx="478.45749"
+     inkscape:cy="253.69615"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(-22.517912,-54.3536)"
+     inkscape:label="layer1">
+    <rect
+       style="fill:#3db4f2;fill-opacity:1;stroke:none;stroke-width:0.264999;paint-order:stroke fill markers"
+       id="rect833"
+       width="164.61375"
+       height="28.729761"
+       x="22.51792"
+       y="54.3536" />
+    <rect
+       style="fill:#3db4f2;fill-opacity:1;stroke:none;stroke-width:0.264999;paint-order:stroke fill markers"
+       id="rect833-4"
+       width="164.61375"
+       height="28.729761"
+       x="22.51792"
+       y="100.16592" />
+    <rect
+       style="fill:#3db4f2;fill-opacity:1;stroke:none;stroke-width:0.264999;paint-order:stroke fill markers"
+       id="rect833-4-2"
+       width="164.61375"
+       height="28.729761"
+       x="22.517912"
+       y="145.97824" />
+  </g>
+</svg>
