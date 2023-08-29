@@ -102,12 +102,12 @@ footer {
 #SideNav {
     position: fixed;
     margin: 0px;
-    width: 100%;
-    width: -moz-available;
+    height: 100%;
+    height: -moz-available;
     /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;
+    height: -webkit-fill-available;
     /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
+    height: fill-available;
     background-color: #172e48;
     width: 25%;
     z-index: 2;
