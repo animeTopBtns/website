@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 2.0
+// @version 2.1
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -64,6 +64,7 @@
 // @match *://*.animelab.com/*
 // @match *://*.animesimple.com/*
 // @match *://*.animesuge.to/*
+// @match *://*.animeflix.live/*
 // @match *://*.hidive.com/*
 // @match *://*.yugen.to/*
 // @match *://*.animension.to/*
@@ -279,9 +280,11 @@ var mybutton = document.getElementById("topBtnBoxThing");
 var topBtn = document.getElementById("topBtn");
 var HideTopBtnButton = document.getElementById("HideTopBtnButton");
 var HideTopBtnButtonX = "0";
+var HideTopBtnButtonXZ = "1400";
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
+window.onclick = function() {HideTopBtnButtonXZ = (HideTopBtnButtonXZ == 1400) ? 1700 : 1400;window.setTimeout(scrollFunction, HideTopBtnButtonXZ);};
 
 function scrollFunction() {
   if (scrollTop(document) > 20 || scrollTop(document.documentElement) > 20) {
@@ -289,11 +292,24 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
-  var x = document.getElementById("floatbutton");
-  var elementExists = document.getElementById("topBtnBoxThing");
-  if (x !== null && elementExists !== null) {
+  let x = document.getElementsByClassName("floatbutton floatHide")[0];
+  let elementExists = document.getElementById("topBtnBoxThing");
+  if ((!(document.getElementsByClassName("floatbutton floatHide").length == 0) ^ ((!(document.getElementsByClassName("floatbutton")[0].style.display !== "") || !(document.getElementsByClassName("floatbutton")[0].style.display !== "none")) && document.getElementsByClassName("floatbutton").length !== "0")) == 0) {
     document.getElementById("topBtnBoxThing").id = "topBtnWithMal";
     document.getElementById("HideTopBtnButton").id = "topBtnWithMal2";
+    if (HideTopBtnButtonX == 1) {
+    document.getElementById("topBtnWithMal2").style.bottom = "100px";
+    } else {
+    document.getElementById("topBtnWithMal2").style.bottom = "150px";
+    }
+  } else {
+      document.getElementById("topBtnWithMal").id = "topBtnBoxThing";
+    document.getElementById("topBtnWithMal2").id = "HideTopBtnButton";
+    if (HideTopBtnButtonX == 1) {
+    document.getElementById("HideTopBtnButton").style.bottom = "25px";
+    } else {
+    document.getElementById("HideTopBtnButton").style.bottom = "70px";
+    }
   }
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     if (elementExists !== null) {
@@ -360,7 +376,7 @@ document.getElementById("topBtn").style.backgroundColor = '#ff530d';
 // When the user clicks on the button, scroll to the top of the document
 document.getElementById("topBtn").addEventListener('click', function (e) {
     if (e.shiftKey) {
-        window.scrollTo(0, document.body.scrollHeight)
+        window.scrollTo(0, document.body.scrollHeight + 99999)
     } else {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0
@@ -693,7 +709,7 @@ right: 83px !important;
 </style>
 `);
 document.body.append(elemDivTopBtn);
-} else if (/animesuge\.to/.test (location.hostname) ) {
+} else if (/animesuge\.to/.test (location.hostname) || /animeflix\.live/.test (location.hostname) ) {
   elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
