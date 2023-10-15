@@ -74,6 +74,7 @@
 // @match *://theindex.moe/*
 // @match *://*.livechart.me/*
 // @match *://*.allanime.co/*
+// @match *://*.allanime.to/*
 // @match *://chiaki.site/*
 // @match *://comick.app/*
 // @match *://*.anime-planet.com/*
@@ -562,8 +563,8 @@ document.getElementById('TopBtnMain').append(elemDivTopBtnMainScript);
 
 var elemDivTopBtn = document.createElement('div');
 
-if (/vrv\.co/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+if (/vrv\.co/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #fd0;
@@ -583,9 +584,9 @@ fill: #fd0;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/zoro\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/zoro\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #cae962;
@@ -599,9 +600,9 @@ fill: #cae962;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/aniwatch\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/aniwatch\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #ffdd95;
@@ -618,9 +619,9 @@ display: none !important;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/crunchyroll\.com/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/crunchyroll\.com/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #df6300;
@@ -634,9 +635,9 @@ fill: #df6300;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/mangadex\.org/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/mangadex\.org/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #E6613E;
@@ -650,9 +651,9 @@ fill: #E6613E;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/9anime\.ru/.test(location.hostname) || /9anime\.me/.test(location.hostname) || /9anime\.pl/.test(location.hostname) || /9anime\.ph/.test(location.hostname) || /9anime\.to/.test(location.hostname) || /9anime\.id/.test(location.hostname) || /9anime\.is/.test(location.hostname) || /9anime\.ch/.test(location.hostname) || /9anime\.nl/.test(location.hostname) || /9anime\.live/.test(location.hostname) || /9anime\.one/.test(location.hostname) || /9anime\.page/.test(location.hostname) || /9anime\.video/.test(location.hostname) || /9anime\.life/.test(location.hostname) || /9anime\.love/.test(location.hostname) || /9anime\.tv/.test(location.hostname) || /9anime\.id/.test(location.hostname) || /9anime\.club/.test(location.hostname) || /9anime\.center/.test(location.hostname) || /9anime\.gs/.test(location.hostname) || /9animehq\.to/.test(location.hostname) || /9animeto\.io/.test(location.hostname) || /aniwave\.to/.test(location.hostname) || /animelab\.com/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/9anime\.ru/.test (location.hostname) || /9anime\.me/.test (location.hostname) || /9anime\.pl/.test (location.hostname) || /9anime\.ph/.test (location.hostname) || /9anime\.to/.test (location.hostname) || /9anime\.id/.test (location.hostname) || /9anime\.is/.test (location.hostname) || /9anime\.ch/.test (location.hostname) || /9anime\.nl/.test (location.hostname) || /9anime\.live/.test (location.hostname) || /9anime\.one/.test (location.hostname) || /9anime\.page/.test (location.hostname) || /9anime\.video/.test (location.hostname) || /9anime\.life/.test (location.hostname) || /9anime\.love/.test (location.hostname) || /9anime\.tv/.test (location.hostname) || /9anime\.id/.test (location.hostname) || /9anime\.club/.test (location.hostname) || /9anime\.center/.test (location.hostname) || /9anime\.gs/.test (location.hostname) || /9animehq\.to/.test (location.hostname) || /9animeto\.io/.test (location.hostname) || /aniwave\.to/.test (location.hostname) || /animelab\.com/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #5a2e98;
@@ -668,9 +669,9 @@ fill: #5a2e98;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/kissmanga\.com/.test(location.hostname) || /anilist\.co/.test(location.hostname) || /anichart\.net/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/kissmanga\.com/.test (location.hostname) || /anilist\.co/.test (location.hostname) || /anichart\.net/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #3db4f2;
@@ -705,9 +706,9 @@ fill: white !important;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/kitsu\.io/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/kitsu\.io/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
  background-color: #997d78;
@@ -722,9 +723,9 @@ fill: #997d78;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/kissanime\.ru/.test(location.hostname) || /kissanime\.pro/.test(location.hostname) || /kissanime\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/kissanime\.ru/.test (location.hostname) || /kissanime\.pro/.test (location.hostname) || /kissanime\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #81cc03;
@@ -738,9 +739,9 @@ fill: #81cc03;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/myanimelist\.net/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/myanimelist\.net/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #2e51a2;
@@ -770,9 +771,9 @@ html.dark-mode #HideTopBtnWithMal2:hover {
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/gogoanime\.io/.test(location.hostname) || /gogoanime\.video/.test(location.hostname) || /gogoanime\.sk/.test(location.hostname) || /gogoanime\.tel/.test(location.hostname) || /gogoanime\.news/.test(location.hostname) || /gogoanime\.bid/.test(location.hostname) || /gogoanime\.ar/.test(location.hostname) || /gogoanimehd\.io/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/gogoanime\.io/.test (location.hostname) || /gogoanime\.video/.test (location.hostname) || /gogoanime\.sk/.test (location.hostname) || /gogoanime\.tel/.test (location.hostname) || /gogoanime\.news/.test (location.hostname) || /gogoanime\.bid/.test (location.hostname) || /gogoanime\.ar/.test (location.hostname) || /gogoanimehd\.io/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #ffc119;
@@ -792,9 +793,9 @@ display: none;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/animekisa\.tv/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/animekisa\.tv/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #e61d2f;
@@ -813,9 +814,9 @@ right: 83px !important;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/animesuge\.to/.test(location.hostname) || /animeflix\.live/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/animesuge\.to/.test (location.hostname) || /animeflix\.live/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #ff0000;
@@ -834,9 +835,9 @@ right: 83px !important;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/animeflv\.net/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/animeflv\.net/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #01cfff;
@@ -850,9 +851,9 @@ fill: #01cfff;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/animension\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/animension\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #2387bd;
@@ -866,9 +867,9 @@ fill: #2387bd;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/jkanime\.net/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/jkanime\.net/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #DF9700;
@@ -882,9 +883,9 @@ fill: #DF9700;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/turkanime\.net/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/turkanime\.net/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: black;
@@ -898,9 +899,9 @@ fill: black;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/4anime\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/4anime\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #e61d2f;
@@ -914,9 +915,9 @@ fill: #e61d2f;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/animeultima\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/animeultima\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #3273dc;
@@ -935,9 +936,9 @@ right: 83px !important;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/animesimple\.com/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/animesimple\.com/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #4ecdc4;
@@ -968,9 +969,9 @@ fill: white;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/yugen\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/yugen\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #07bf67;
@@ -985,9 +986,9 @@ fill: #07bf67;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/hidive\.com/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/hidive\.com/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #00aef0;
@@ -1001,9 +1002,9 @@ fill: #00aef0;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/funimation\.com/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/funimation\.com/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #410099;
@@ -1022,9 +1023,9 @@ z-index: 99 !IMPORTANT;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/animixplay\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/animixplay\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #178be6;
@@ -1041,9 +1042,9 @@ display: none;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/mangareader\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/mangareader\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #7b36ce;
@@ -1057,9 +1058,9 @@ fill: #7b36ce;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/readmanganato\.com/.test(location.hostname) || /manganato\.com/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/readmanganato\.com/.test (location.hostname) || /manganato\.com/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #ff530d;
@@ -1076,9 +1077,9 @@ display: none !IMPORTANT;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/animethemes\.moe/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/animethemes\.moe/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #2e293a;
@@ -1103,9 +1104,9 @@ fill: #f5f2fa;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/theindex\.moe/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/theindex\.moe/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #1d1d1d;
@@ -1114,9 +1115,9 @@ outline: #121212 2.9px solid;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/livechart\.me/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/livechart\.me/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #3b97fc;
@@ -1132,9 +1133,9 @@ fill: #3b97fc;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/allanime\.co/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/allanime\.co/.test (location.hostname) || /allanime\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #0061a1;
@@ -1154,9 +1155,9 @@ display: none !important;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/chiaki\.site/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/chiaki\.site/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
 background-color: #fe78e4;
@@ -1172,9 +1173,9 @@ fill: #fe78e4;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/comick\.app/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/comick\.app/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 html.dark #topBtn {
 background-color: #2563eb;
@@ -1202,9 +1203,9 @@ fill: #3b82f6;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/anime-planet\.com/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/anime-planet\.com/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 html.darkmode #topBtn {
 color: #fff;
@@ -1223,9 +1224,9 @@ fill: #ef5040;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
-} else if (/mangafire\.to/.test(location.hostname)) {
-    elemDivTopBtn.innerHTML = (`
+document.body.append(elemDivTopBtn);
+} else if (/mangafire\.to/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
       <style>
 html.darkmode #topBtn {
 color: #fff;
@@ -1244,5 +1245,5 @@ fill: #0062d7;
 }
 </style>
 `);
-    document.body.append(elemDivTopBtn);
+document.body.append(elemDivTopBtn);
 }
