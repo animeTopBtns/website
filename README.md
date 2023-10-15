@@ -26,6 +26,7 @@ Anime-Planet
 AnimeThemes.moe  
 The Index  
 Livechart  
+AllAnime
 Chiaki  
 VRV  
 Crunchyroll  
