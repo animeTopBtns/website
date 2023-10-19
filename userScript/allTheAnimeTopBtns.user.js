@@ -2,7 +2,7 @@
 // @name All the anime top buttons
 // @namespace http://tampermonkey.net/
 // @website https://animetopbtns.github.io/website/
-// @version 2.2.2
+// @version 2.3
 // @description All the anime top buttons (has MAL-Sync support)
 // @author WhiteTapeti
 // @license MIT
@@ -71,6 +71,7 @@
 // @match *://*.animesimple.com/*
 // @match *://*.animesuge.to/*
 // @match *://*.animeflix.live/*
+// @match *://*.animeflix.icu/*
 // @match *://*.hidive.com/*
 // @match *://*.yugen.to/*
 // @match *://*.animension.to/*
@@ -78,9 +79,11 @@
 // @match *://*.animixplay.to/*
 // @match *://animethemes.moe/*
 // @match *://theindex.moe/*
+// @match *://everythingmoe.com/*
 // @match *://*.livechart.me/*
 // @match *://*.allanime.co/*
 // @match *://*.allanime.to/*
+// @match *://*.allanime.com/*
 // @match *://chiaki.site/*
 // @match *://comick.app/*
 // @match *://*.anime-planet.com/*
@@ -838,7 +841,7 @@ right: 83px !important;
 </style>
 `);
 document.body.append(elemDivTopBtn);
-} else if (/animesuge\.to/.test (location.hostname) || /animeflix\.live/.test (location.hostname) ) {
+} else if (/animesuge\.to/.test (location.hostname) || /animeflix\.live/.test (location.hostname) || /animeflix\.icu/.test (location.hostname) ) {
   elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
@@ -1139,6 +1142,17 @@ outline: #121212 2.9px solid;
 </style>
 `);
 document.body.append(elemDivTopBtn);
+} else if (/everythingmoe\.com/.test (location.hostname) ) {
+  elemDivTopBtn.innerHTML = ( `
+      <style>
+#topBtn {
+background-color: #1e1e1e;
+color: #fff;
+outline: #121212 2.9px solid;
+}
+</style>
+`);
+document.body.append(elemDivTopBtn);
 } else if (/livechart\.me/.test (location.hostname) ) {
   elemDivTopBtn.innerHTML = ( `
       <style>
@@ -1157,7 +1171,7 @@ fill: #3b97fc;
 </style>
 `);
 document.body.append(elemDivTopBtn);
-} else if (/allanime\.co/.test (location.hostname) || /allanime\.to/.test (location.hostname) ) {
+} else if (/allanime\.co/.test (location.hostname) || /allanime\.to/.test (location.hostname) || /allanime\.com/.test (location.hostname) ) {
   elemDivTopBtn.innerHTML = ( `
       <style>
 #topBtn {
