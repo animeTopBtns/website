@@ -13,6 +13,7 @@ MAL (MyAnimeList) (as of v1.5 the button changes to match a lists header color a
 Anime-Planet  
 AnimeThemes.moe  
 The Index  
+EverythingMoe  
 Livechart  
 AllAnime
 Chiaki  
