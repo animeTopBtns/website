@@ -21,23 +21,24 @@ Supported websites:
 AniList (as of 1.15.1 button changes to match profile colors)  
 AniChart  
 Kitsu  
-MAL (MyAnimeList) (as of v1.5 the button changes to match a lists header color automatically. If you want to change it in your custom theme make sure to use **!important**)  
+MAL (MyAnimeList) (as of v1.5 the button changes to match a lists header color automatically. If you want to change it in your custom theme make sure to use <b>!important</b>)  
 Anime-Planet  
 AnimeThemes.moe  
 The Index  
 EverythingMoe  
 Livechart  
-AllAnime
+AllAnime  
 Chiaki  
 VRV  
 Crunchyroll  
 Funimation  
-KissAnime (R.I.P.)  
-KissManga (R.I.P.)  
+~~KissAnime~~ (R.I.P.)  
+~~KissManga~~ (R.I.P.)  
 MangaDex  
-9anime  
-Gogoanime  
-Zoro.to  
+9anime/aniwave  
+animepahe  
+Gogoanime/gogoanimehd  
+Zoro.to/aniwatch  
 AnimeKisa  
 Animeflv  
 Jkanime  
@@ -48,6 +49,7 @@ AnimeLab
 animesimple  
 Hidive  
 Animesuge  
+Animeflix  
 Yugen  
 Animension  
 AniMixPlay  
