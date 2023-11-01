@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Inkapedia DarkMode fix
 @namespace      github.com/openstyles/stylus
-@version        1.5.1
+@version        1.5.2
 @description    Userstyle that aims to fix problems with the inkapedia darkmode (not fully complete)
 @author         WhiteTapeti
 ==/UserStyle== */
@@ -15,7 +15,7 @@
     nav#p-namespaces li,
     nav#p-views li,
     nav#p-cactions {
-        background-color: #27262c;
+        background-color: #27262c!important;
     }
 
     .vector-menu-dropdown .vector-menu-heading:after {
