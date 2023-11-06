@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fix ZZZ Opera Music
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Fixes the music not playing in the Opera Browser on the Zenless Zone Zero website.
 // @author       WhiteTapeti
 // @match        *://zenless.hoyoverse.com/*
@@ -16,7 +16,7 @@ audio.loop = true;
 
 setInterval(function testLoading() {
     if (loaded == 0) {
-        if (document.getElementsByClassName("loading").length == 0) {
+        if (document.getElementsByClassName("loading").length == 0 || document.getElementsByClassName("loading")[0].attributes.style.nodeValue == "display: none;" || document.body.contains(document.getElementById("MiruLinks")) == false) {
             audio.volume = 0;
             audio.play();
             getSoundAndFadeAudio(1);
